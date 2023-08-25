@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+} 
+
+.nav-header  li {
+    display: inline-block;
+    text-decoration: none;
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+.nav-header a {
+     padding: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:wheat;
+    transition: linear 0.4s;
+    display:inline-block ;
+}
+.nav-header a:hover{
+    transform: scale(1.5);
+    color: wheat;
+    font-size: larger;
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+
+.slideshow,
+.slideshow::after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+} 
+.slideshow::after{
+    content: '';
+    background: linear-gradient(-70deg, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+.img-slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: -1;
+    animation: backgroundSlideshow 60s linear infinite 0s;
+}
+.slideshow li:nth-child(1) .img-slide{
+    background-image: url(./img/index/index1.jpg);
+}
+.slideshow li:nth-child(2) .img-slide{
+    background-image: url(./img/index/index2.jpg);
+    animation-delay: 5s;
+}
+.slideshow li:nth-child(3) .img-slide{
+    background-image: url(./img/index/index3.jpg);
+    animation-delay: 10s;
+}
+.slideshow li:nth-child(4) .img-slide{
+    background-image: url(./img/index/index4.jpg);
+    animation-delay: 15s;
+}
+.slideshow li:nth-child(5) .img-slide{
+    background-image: url(./img/index/index5.jpg);
+    animation-delay: 20s;
+}
+.slideshow li:nth-child(6) .img-slide{
+    background-image: url(./img/index/index6.jpg);
+    animation-delay: 25s;
+}
+.slideshow li:nth-child(7) .img-slide{
+    background-image: url(./img/index/index7.jpg);
+    animation-delay: 30s;
+}
+
+@keyframes backgroundSlideshow {
+    0% { opacity: 0;}
+    12.5% { opacity: 1;}
+    25% {opacity: 1;}
+    37.5% {opacity: 0;}
+    100% {opacity: 0;}
+}
+.indexdiv{
+    opacity: 1;
+    position: absolute;
+    top: 16rem;
+    left: 36rem;
+}
+.indexdiv h1{
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+.indexdiv h2{
+    margin: 1rem;
+}
+.indexdiv button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: white;
+    position: absolute;
+    left: 3.5rem;
+}
+.indexdiv button:hover{
+    background-color: white;
+    color: black;
+}
+.peopleh1{
+    margin: 5rem;
+}
+.peoplesec1{
+    margin: 3rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.peoplesec1 div:nth-child(1){
+    grid-row: 1/ span 2;
+}
+.peoplesec1 div{
+    transition: 1s;
+}
+.peoplesec2{
+    margin: 3rem;
+    margin-left: 12rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+}
+.peoplesec2 div{
+    transition: 1s;
+}
+.peoplesec3{
+    margin: 3rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+.peoplesec3 div:nth-child(2){
+    grid-row: 1/ span 2;
+}
+.peoplesec3 div{
+    transition: 1s;
+}
+.peoplesec4{
+    margin: 3rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+.peoplesec4 div:nth-child(1){
+    grid-row: 1/ span 2;
+}
+.peoplesec4 div{
+    transition: 1s;
+}
+.peoplesec5{
+    margin: 3rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+.peoplesec5 div:nth-child(1){
+    grid-row: 1/ span 2;
+}
+.peoplesec5 div{
+    transition: 1s;
+}
+.peoplesec6{
+    margin: 3rem;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+.peoplesec6 div:nth-child(2){
+    grid-row: 1/ span 2;
+}
+.peoplesec6 div{
+    transition: 1s;
+}
+.peoplesec7{
+    margin: 1rem;
+    margin-left: 12rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+}
+.peoplesec7 div{
+    transition: 1s;
+}
+footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0.2rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer > p:hover{
+    color: brown;
+}
+footer a:hover{
+    color: brown;
+}
+.aboutdiv1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 3rem;
+}
+.aboutdiv1 p{
+    font-size: larger;
+    margin: 2rem;
+}
+.aboutdiv1 img{
+    margin: 4rem;
+}
+.aboutdiv1 h1{
+    margin: 4rem;
+}
+.contactdiv1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 3rem;
+}
+.contactdiv1 h1{
+    margin: 4rem;
+}
+.contactdiv1 h2, h3{
+    margin: 1rem;
+    margin-left: 4rem;
+}
+.contactdiv1 a{
+    text-decoration: none;
+    color: white;
+}
+.contactdiv1 form{
+    margin: 6rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+label{
+    font-size: larger;
+}
+input[type= "text"], input[type= "email"], textarea{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-top: none;
+    border-inline: none;
+    padding: 1rem;
+} 
+input[type= "submit"], input[type= "reset"]{
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: white;
+}
+input[type= "reset"]:hover{
+    background-color: white;
+    color: black;
+}
+input[type= "submit"]:hover{
+    background-color: white;
+    color: black;
+}
+.peoplesec1 div:nth-child(1):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec1 div:nth-child(2):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec1 div:nth-child(3):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec2 div:nth-child(1):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec2 div:nth-child(2):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec2 div:nth-child(3):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec3 div:nth-child(1):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec3 div:nth-child(2):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec3 div:nth-child(3):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec4 div:nth-child(1):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec4 div:nth-child(2):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec4 div:nth-child(3):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec5 div:nth-child(1):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec5 div:nth-child(2):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec5 div:nth-child(3):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec6 div:nth-child(1):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec6 div:nth-child(2):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec6 div:nth-child(3):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec7 div:nth-child(1):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplesec7 div:nth-child(2):hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.peoplediv1 a{
+    text-decoration: none;
+    color: white;
+}
+.peoplediv1 button{
+    padding: 1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.peoplediv1 a:hover{
+    color: wheat;
+}
+.peoplediv1 button:hover{
+    color: wheat;
+}
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    z-index: 1;
+}
+.modalContent{
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    background-color: black;
+
+}
+.close{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover, .close:focus{
+    color: wheat;
+    cursor: pointer;
+}
+.mySlides{
+    display: none;
+    position: absolute;
+    left: 15rem;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 10rem;
+    width: auto;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: white;
+    color: black;
+}
+.prev button, .next button{
+    border: none;
+    padding: 1rem;
+    color: black;
+    background-color: transparent;
+    font-size: larger;
+}
+.newpeoplediv1 a{
+    text-decoration: none;
+    color: white;
+}
+.newpeoplediv1 button{
+    padding: 1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.newpeoplediv1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newpeoplediv1 a:hover{
+    color: wheat;
+}
+.newpeoplediv1 button:hover{
+    color: wheat;
+}
+ @media screen and (max-width: 769px) {
+
+    .navbar__menu{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: -1;
+    }
+    .navbar__menu.active{
+    background: transparent;
+    top: 10%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 100%;
+    font-size: 1.6rem;
+    }
+    .navbar__toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background: wheat;
+    }
+    .navbar__item{
+    width: 100%;
+    }
+    .navbar__links{
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    color: white;
+    }
+    #mobile-menu{
+    position: absolute;
+    top: 4%;
+    right: 15%;
+    transform: translate(5%,20%);
+    }
+    .navbar__toggle .bar{
+    display: block;
+    cursor: pointer;
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .peopleh1{
+        margin: 4rem;
+        font-size: smaller;
+    }
+    .peoplesec1{
+        margin: 2rem;
+        margin-left: 5rem;
+        grid-template-columns: auto;
+    }
+    .peoplesec2{
+        margin: 2rem;
+        margin-left: 5rem;
+        grid-template-columns: auto;
+    }
+    .peoplesec3{
+        margin: 2rem;
+        margin-left: 5rem;
+        grid-template-columns: auto;
+    }
+    .peoplesec4{
+        margin: 2rem;
+        margin-left: 5rem;
+        grid-template-columns: auto;
+    }
+    .peoplesec5{
+        margin: 2rem;
+        margin-left: 5rem;
+        grid-template-columns: auto;
+    }
+    .peoplesec6{
+        margin: 2rem;
+        margin-left: 5rem;
+        grid-template-columns:auto;
+    }
+    .peoplesec7{
+        margin: 2rem;
+        margin-left: 5rem;
+        grid-template-columns: auto;
+    }
+    hr{
+       display: none;
+    }
+    footer{
+        flex-direction: column;
+        font-size: smaller;
+    }
+    
+    .mySlides{
+        left: 0rem;
+    }
+    .mySlides img{
+        width: 100%;
+    }
+    .prev, .next{
+        top: 40rem;
+    }
+    .indexdiv{
+        top: 20rem;
+        left: 5rem;
+    }
+    .aboutdiv1{
+    flex-direction: column;
+        margin: 1rem;
+        margin-left: 4rem;
+        position: relative;
+        width: 85%;
+    }
+    .aboutdiv2{
+        width: 70%;
+    }
+    .aboutdiv2 h1{
+        font-size: medium;
+    }
+    .aboutdiv1 p{
+        font-size: smaller;
+        margin: 1rem;
+    }
+    .aboutdiv1 img{
+        margin: 0rem;
+    }
+    .aboutdiv1 h1{
+        margin: 1rem;
+    }
+    .contactdiv1{
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .contactdiv1 h1{
+        margin: 4rem;
+        font-size: medium;
+    }
+    .contactdiv1 h2, h3{
+        margin: 1rem;
+        margin-left: 4rem;
+        font-size: medium;
+    }
+    .contactdiv1 form{
+        margin: 1rem;
+        margin-left: 3rem;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2rem; 
+        width: 50%;
+    }
+    label{
+        font-size: medium;
+    }
+    textarea{
+        width: 100%;
+    }
+    
+
+}

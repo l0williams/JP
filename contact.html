@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./assets/img/icons/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/home.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="navbar">
+       
+        <nav class="nav-header">
+            <a href="./index.html"><h1>JP</h1></a>
+
+            <div class="navbar__toggle" id="mobile-menu" onclick="mobieMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="./index.html" class="navbar__links">HOME</a></li>
+                <li class="navbar__item"><a href="./people.html" class="navbar__links">PORTFOLIO</a></li>
+                <li class="navbar__item"><a href="./about.html" class="navbar__links">ABOUT</a></li>
+                <li class="navbar__item"><a href="./contact.html" class="navbar__links">CONTACT</a></li>
+            </ul>
+         
+        </nav>
+            
+    </header>
+
+    <main>
+        <div class="contactdiv1" >
+            <div>
+                <h1>CONTACT</h1><br>
+
+                <h2>JOHN PAUL</h2>
+                <h3>PHOTOGRAPHY</h3><br>
+
+                <h3>For Inquiries</h3>
+                <h3><a href="mailto: promisejp225@gmail.com ">Email: promisejp225@gmail.com</a></h3>
+                <h3>Phone: +1 (437) 778-2056</h3>
+
+            </div>
+            <div>
+                <form action="mailto: promisejp225@gmail.com " method="post">
+                    <div>
+                    <label for="name">FIRST NAME</label><br>
+                    <input type="text" id="name" title="fill out this field" class="input-ctrl" required name="name" tabindex="1" ><br>
+                </div>
+                <div>
+                    <label for="name2">LAST NAME</label><br>
+                    <input type="text" id="name2" title="fill out this field" class="input-ctrl" required name="name2" tabindex="2"><br>
+                </div>
+                <div>
+                    <label for="em">EMAIL</label><br>
+                    <input type="email" id="em" title="fill out this field" class="input-ctrl" required name="email" tabindex="3"><br>
+                </div>
+                <div>
+                    <label for="phone">PHONE</label><br>
+                    <input type="text" id="phone" title="fill out this field" class="input-ctrl" required name="phone" tabindex="4"><br>
+                </div>
+                <div>
+                    <label for="msg">Leave us a message....</label><br>
+                   <textarea required name="msg" id="msg" cols="40" rows="5" title="fill out this field" tabindex="5"></textarea><br>
+                </div><br>
+                <div>
+                   <input type="submit" name="submit" value="SEND MESSAGE" tabindex="4"><br>
+                   <input type="reset"  name="submit" value="Reset" tabindex="5">
+                </div>
+                </form>
+            </div>
+       </div><br>
+    </main>
+
+    <hr>
+    <footer>
+        
+        <p class="footerDate"></p> 
+        <p><a href="mailto: promisejp225@gmail.com ">promisejp225@gmail.com</a></p>
+        
+        <a href="https://www.instagram.com/kingjaypeephotography/" target="_blank"><img src="./assets/img/icons/ig.webp" alt="instagram"></a>
+        
+    </footer>
+    <script>
+        
+const date = new Date();
+ let footerDate = document.querySelector(".footerDate");
+ footerDate.innerHTML = "SHOTBYKINGJAYPEEE &copy;"+ date.getFullYear();
+
+ const menu = document.querySelector('#mobile-menu');
+ const menuLinks = document.querySelector('.navbar__menu');
+ 
+ const mobieMenu = () =>{
+ menu.classList.toggle('is-active')
+ menuLinks.classList.toggle('active')
+ }
+
+    </script>
+</body>
+</html>

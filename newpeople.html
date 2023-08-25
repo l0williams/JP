@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./assets/img/icons/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/home.css">
+    <script src="./assets/home.js" defer></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="navbar">
+       
+        <nav class="nav-header">
+            <a href="./index.html"><h1>JP</h1></a>
+
+            <div class="navbar__toggle" id="mobile-menu" onclick="mobieMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="./index.html" class="navbar__links">HOME</a></li>
+                <li class="navbar__item"><a href="./people.html" class="navbar__links">PORTFOLIO</a></li>
+                <li class="navbar__item"><a href="./about.html" class="navbar__links">ABOUT</a></li>
+                <li class="navbar__item"><a href="./contact.html" class="navbar__links">CONTACT</a></li>
+            </ul>
+         
+        </nav>
+            
+    </header>
+
+    <main>
+        <h1 class="peopleh1">PORTRAITS</h1>
+        <section class="peoplesec1">
+
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0000.jpg" alt="work" height="80%" width="80%" onclick="openModal();currentSlide(1)">
+            </div>
+
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0001.jpg" alt="work" height="80%" width="80%" onclick="openModal();currentSlide(2)">
+            </div>
+
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0002.jpg" alt="work" height="80%" width="80%" onclick="openModal();currentSlide(3)">
+        
+            </div>
+            </section>
+
+        <section class="peoplesec2">
+            <div>
+               
+                <img src="./assets/img/newpeople/IMG-20230816-WA0003.jpg" alt="work" height="85%" width="85%" onclick="openModal();currentSlide(4)">
+         
+            </div>
+
+            
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0004.jpg" alt="work" height="85%" width="85%" onclick="openModal();currentSlide(5)">
+          
+            </div>
+
+            
+            <div>
+              
+                <img src="./assets/img/newpeople/IMG-20230816-WA0005.jpg" alt="work" height="85%" width="85%" onclick="openModal();currentSlide(6)">
+           
+            </div>
+        </section>
+            
+        <section class="peoplesec3">
+            
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0006.jpg" alt="work" height="90%" width="90%" onclick="openModal();currentSlide(7)">
+          
+            </div>
+
+            
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0007.jpg" alt="work" height="80%" width="80%" onclick="openModal();currentSlide(8)">
+        
+            </div>
+
+            
+            <div>
+     
+                <img src="./assets/img/newpeople/IMG-20230816-WA0008.jpg" alt="work" height="80%" width="90%" onclick="openModal();currentSlide(9)">
+            
+            </div>
+        </section>
+            
+    <section class="peoplesec4">
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0009.jpg" alt="work" height="80%" width="80%" onclick="openModal();currentSlide(10)">
+            </div>
+
+            
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0010.jpg" alt="work" height="90%" width="90%" onclick="openModal();currentSlide(11)">
+            </div>
+
+            
+            <div>
+                <img src="./assets/img/newpeople/IMG-20230816-WA0011.jpg" alt="work" height="90%" width="90%" onclick="openModal();currentSlide(12)">
+           
+            </div>
+        </section>
+
+            <section class="peoplesec5">
+            <div>
+            
+                <img src="./assets/img/newpeople/IMG-20230816-WA0012.jpg" alt="work" height="80%" width="80%" onclick="openModal();currentSlide(13)">
+            
+            </div>
+
+            
+            <div>
+              
+                <img src="./assets/img/newpeople/IMG-20230816-WA0013.jpg" alt="work" height="90%" width="90%" onclick="openModal();currentSlide(14)">
+           
+            </div>
+
+        </section>
+
+  <div class="newpeoplediv1">
+            <a href="./people.html">PREVIOUS PROJECT<button>←</button></a> 
+            <a href="./people.html">NEXT PROJECT<button>→</button></a>
+         </div>
+
+
+         <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">X</span>
+            <div class="modalContent">
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0000.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0001.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0002.jpg" alt="work" width="85%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0003.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0004.jpg" alt="work" width="80%">
+              
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0005.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0006.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0007.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0008.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0009.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0010.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0011.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0012.jpg" alt="work" width="80%">
+                </div>
+                <div class="mySlides">
+                    <img src="./assets/img/newpeople/IMG-20230816-WA0013.jpg" alt="work" width="80%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">BACK<button>←</button></a> 
+                <a class="next" onclick="plusSlides(1)">NEXT<button>→</button></a>
+
+            </div>
+
+         </div>
+
+    </main>
+
+    <hr>
+    <footer>
+
+        <p class="footerDate"></p> 
+        <p><a href="mailto: promisejp225@gmail.com ">promisejp225@gmail.com</a></p>
+        
+        <a href="https://www.instagram.com/kingjaypeephotography/" target="_blank"><img src="./assets/img/icons/ig.webp" alt="instagram"></a>
+        
+    </footer>
+    
+</body>
+</html>

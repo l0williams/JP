@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./assets/img/icons/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/home.css">
+    <title>JP-Photography</title>
+</head>
+<body>
+    <header class="navbar">
+       
+        <nav class="nav-header">
+            <a href="./index.html"><h1>JP</h1></a>
+
+            <div class="navbar__toggle" id="mobile-menu" onclick="mobieMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="./people.html" class="navbar__links">PORTFOLIO</a></li>
+                <li class="navbar__item"><a href="./about.html" class="navbar__links">ABOUT</a></li>
+                <li class="navbar__item"><a href="./contact.html" class="navbar__links">CONTACT</a></li>
+            </ul>
+         
+        </nav>
+            
+    </header>
+
+    <main>
+
+        <div class="indexdiv">
+            <h1>JOHN PAUL</h1>
+            <h2>PHOTOGRAPHY</h2>
+            <a href="./people.html"><button>VIEW WORK</button></a>
+        </div>
+
+       <ul class="slideshow">
+        <li>
+            <span class="img-slide">image1</span>
+        </li>
+
+        <li>
+            <span class="img-slide">image2</span>
+        </li>
+
+        <li>
+            <span class="img-slide">image3</span>
+        </li>
+
+        <li>
+            <span class="img-slide">image4</span>
+        </li>
+
+        <li>
+            <span class="img-slide">image5</span>
+        </li>
+
+        <li>
+            <span class="img-slide">image6</span>
+        </li>
+
+        <li>
+            <span class="img-slide">image7</span>
+        </li>
+
+
+
+
+
+
+
+       </ul>
+        
+      
+    </main>
+<script>
+ const menu = document.querySelector('#mobile-menu');
+ const menuLinks = document.querySelector('.navbar__menu');
+ 
+ const mobieMenu = () =>{
+ menu.classList.toggle('is-active')
+ menuLinks.classList.toggle('active')
+ }
+
+</script>
+</body>
+</html>
