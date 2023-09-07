@@ -4,63 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="">
-    <script src="" defer></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/img/icons/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <a href="./index.html"><h1>JP</h1></a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+    <header class="navbar">
+        <nav class="nav-header">
+            <a href="./index.html"><h1>JP</h1></a>
+            <div class="navbar__toggle" id="mobile-menu" onclick="mobieMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="./index.html" class="navbar__links">HOME</a></li>
+                <li class="navbar__item"><a href="./people.html" class="navbar__links">PORTFOLIO</a></li>
+                <li class="navbar__item"><a href="./about.html" class="navbar__links">ABOUT</a></li>
+                <li class="navbar__item"><a href="./contact.html" class="navbar__links">CONTACT</a></li>
             </ul>
-        </nav>
+        </nav>         
     </header>
-
-    <main>
-        <h1>MY PROJECTS</h1>
-        <section>
-
-            <div>
-                <a href="./people.html">
-                <img src="" alt="people">
-                <h1>PEOPLE</h1></a>
+    <section class="portfolio_design">
+        <h1>Portfolio</h1>
+        <div class="image_container">
+            <div class="image">
+                <img src="/assets/img/people/IMG-20230809-WA0002.jpg" alt="" srcset="">
             </div>
-
-            <div>
-                <a href="./place.html">
-                <img src="" alt="places">
-                <h1>PLACES</h1></a>
+        </div>
+        <div class="pagination">
+            <button id="prev">prev</button>
+            <button id="next">next</button>
+        </div>
+        <div class="pop_up">
+            <div class="image_modal">
+                <div class="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <button class="prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="image">
+                    <img src="" alt="">
+                </div>
+                <button class="next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
             </div>
-
-            <div>
-                <a href="./still.html">
-                <img src="" alt="stillthings">
-                <h1>STILLTHINGS</h1></a>
-            </div>
-
-            <div>
-                <a href="./food.html">
-                <img src="" alt="FOOD">
-                <h1>FOOD</h1></a>
-            </div>
-
-        </section>
-
-    </main>
-<hr>
-    <footer>
-
-        <p>SHOTSBYKINGJAYPE &copy;2023</p> 
-        <p><a href="mailto: promisejp225@gmail.com ">promisejp225@gmail.com</a></p>
-        
-        <a href=""><img src="" alt="instagram"></a>
-        
-    </footer>
+        </div>
+    </section>
+    <script src="./assets/portfolio.js"></script>
 </body>
 </html>
